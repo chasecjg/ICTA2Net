@@ -25,7 +25,7 @@
 | 📄 **Paper / 论文PDF** | [Download PDF](https://github.com/chasecjg/ICTA2Net/blob/main/paper/Thinking%20Aesthetics%20Assessment%20of%20Image%20Color%20Temperature%20Models%2C%20Datasets%20and%20Benchmarks.pdf) |
 | 🌐 **Project Page / 项目主页** | [ICTA2Net.github.io](https://chasecjg.github.io/ICTA2Net.github.io/)           |
 | 🧠 **Pre-trained Weights / 预训练模型权重** | [Google Drive](https://drive.google.com/file/d/1xpYZbgaj90cSuS5w_yTIQifXjKmkOol_/view?usp=sharing), [百度网盘](https://pan.baidu.com/s/18h99DgDhvC51rt9XW1x5PA?pwd=6666) |
-| 📊 **Dataset / 数据集** | [百度网盘](https://pan.baidu.com/s/1xxxxxx) _(即将更新)_                        |
+| 📊 **Dataset / 数据集** | [百度网盘](https://pan.baidu.com/s/1lCjeCZ9_CnQlP929PrTyVQ?pwd=6666)                      |
 
 
 ---
@@ -79,7 +79,6 @@
 <b>Figure 3.</b> Visualization of model ranking results: aesthetic scores decrease progressively from left to right and top to bottom.
 </div>
 
----
 
 
 ---
