@@ -128,7 +128,9 @@ python test.py
 
 <div align="left">
 
-### 📫 欢迎 star、fork 与交流合作！
+### 📫 Welcome to star, fork and collaborate!
+
+
 
 <p align="left"><a href="#top">🔝 Back to Top</a></p>
 
