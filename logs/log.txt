@@ -1,0 +1,1 @@
+epoch:0,t_acc:0.42986,v_acc:0.61315,tacc_gt:0.67985, vacc_gt:0.76312,train:1.26939,test:3.18434, contrastive_loss":0.68295
