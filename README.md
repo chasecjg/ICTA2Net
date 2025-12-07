@@ -31,37 +31,56 @@
 ---
 
 ## 🖼️ Visualization Gallery  
+## 🖼️ Visualization Gallery  
+
+---
 
 ### Dataset Overview  
-<div align="center">
+
+<p align="center">
   <img src="https://github.com/user-attachments/assets/4145d4f6-7b3e-4965-be27-e52a5b7b2991" 
        alt="Dataset Overview: Color Temperature Distribution & t-SNE Visualization" 
-       width="80%" 
-       style="border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-  <p style="font-size: 14px; color: #666; margin-top: 8px; text-align: justify; max-width: 90%;"><b>Figure 1.</b>: Dataset Overview. Our dataset consists of multiple sets of images with different white balance shifts, along with their corresponding high-quality aesthetic reference images. The t-SNE visualization of the images at various color temperatures in the dataset is shown in the figure. This dataset is constructed from linear raw RGB images in the MIT-Adobe FiveK and PPR10K datasets. By precisely simulating the camera ISP process, we generate multiple rendered versions of each image with varying color temperatures.</p>
+       width="80%">
+</p>
+
+<div style="width:88%; margin:auto; text-align:justify; font-size:14px; color:#666;">
+<b>Figure 1.</b> Dataset Overview. Our dataset consists of multiple sets of images with different white balance shifts, along with their corresponding high-quality aesthetic reference images. The t-SNE visualization of the images at various color temperatures in the dataset is shown in the figure. This dataset is constructed from linear raw RGB images in the MIT-Adobe FiveK and PPR10K datasets. By precisely simulating the camera ISP process, we generate multiple rendered versions of each image with varying color temperatures.
 </div>
 
 <br>
+
+---
 
 ### Model Architecture  
-<div align="center">
+
+<p align="center">
   <img src="https://github.com/user-attachments/assets/62e94d21-db20-41f9-871f-25b507e3b9dc" 
        alt="ICTA2Net Architecture: Cross-Modal Fusion for Color Temperature Aesthetics" 
-       width="90%" 
-       style="border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-  <p style="font-size: 14px; color: #666; margin-top: 8px; text-align: justify; max-width: 90%;"><b>Figure 2.</b>: Overall framework of ICTA2Net, comprising four components: a Color Temperature Encoder for capturing color temperature variations; a Contextual Awareness Module (including Visual Encoder, Text Encoder, and Text Denoise Model); a Cross-Modal Fusion Module for visual-textual integration; and a Pairwise Ranking Predictor for aesthetic preference estimation.</p>
+       width="90%">
+</p>
+
+<div style="width:88%; margin:auto; text-align:justify; font-size:14px; color:#666;">
+<b>Figure 2.</b> Overall framework of ICTA2Net, comprising four components: a Color Temperature Encoder for capturing color temperature variations; a Contextual Awareness Module (including Visual Encoder, Text Encoder, and Text Denoise Model); a Cross-Modal Fusion Module for visual–textual integration; and a Pairwise Ranking Predictor for aesthetic preference estimation.
 </div>
 
 <br>
 
+---
+
 ### Aesthetic Ranking Results  
-<div align="center">
+
+<p align="center">
   <img src="https://github.com/user-attachments/assets/8f9cc0e8-b031-4e38-b88f-efc12b9e84e8" 
        alt="Aesthetic Ranking Visualization: Color Temperature Impact on Image Aesthetics" 
-       width="95%" 
-       style="border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-  <p style="font-size: 14px; color: #666; margin-top: 8px; text-align: justify; max-width: 90%;"><b>Figure 3.</b>: Visualization of model ranking results: aesthetic scores decrease progressively from left to right and top to bottom.</p>
+       width="95%">
+</p>
+
+<div style="width:88%; margin:auto; text-align:justify; font-size:14px; color:#666;">
+<b>Figure 3.</b> Visualization of model ranking results: aesthetic scores decrease progressively from left to right and top to bottom.
 </div>
+
+---
+
 
 ---
 
