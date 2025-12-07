@@ -31,7 +31,6 @@
 ---
 
 ## 🖼️ Visualization Gallery  
-## 🖼️ Visualization Gallery  
 
 ---
 
