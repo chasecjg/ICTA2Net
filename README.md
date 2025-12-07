@@ -1,29 +1,32 @@
 <div align="center">
 
-# 🌡️ ICTA2Net: Thinking Aesthetics Assessment of Image Color Temperature  
-## Models, Datasets, and Benchmarks  
+# 🔥❄️🌡️ **ICTA2Net**
+## **Thinking Aesthetics Assessment of Image Color Temperature**
+### _Models, Datasets,   Benchmarks_
 
-[![GitHub Stars](https://img.shields.io/github/stars/chasecjg/ICTA2Net?style=for-the-badge&color=ff69b4)](https://github.com/chasecjg/ICTA2Net)
+[![GitHub Stars](https://img.shields.io/github/stars/chasecjg/ICTA2Net?style=for-the-badge&logo=github&color=ff69b4)](https://github.com/chasecjg/ICTA2Net)
 [![GitHub License](https://img.shields.io/github/license/chasecjg/ICTA2Net?style=for-the-badge&color=4169e1)](https://github.com/chasecjg/ICTA2Net/blob/main/LICENSE)
-[![AAAI 2026](https://img.shields.io/badge/AAAI-2026-Poster-blue?style=for-the-badge&color=32cd32)](https://aaai.org/Conferences/AAAI-26/)
+[![AAAI 2026](https://img.shields.io/badge/AAAI%202026-Poster-32cd32?style=for-the-badge)](https://aaai.org/Conferences/AAAI-26/)
 
-*Elegance in color temperature, precision in aesthetic assessment*  
 
 </div>
 
 ---
 
-## 📢 Announcement  
-> Thank you for your attention! The full paper and official code have been released in this repository.  
-> 感谢各位同仁的关注，论文全文与官方代码已在本仓库发布。  
+## 📢 **Announcement | 项目公告**
+> 🎉 **The full paper and official code have been released in this repository.**  
+> 🎉 **论文全文与官方代码已正式发布，欢迎查阅与使用！**
 
-### 📁 Resource Links  
-| Resource Type | Access Link |  
-|---------------|-------------|  
-| 📜 Paper | [PDF](https://github.com/chasecjg/ICTA2Net/blob/main/paper/Thinking%20Aesthetics%20Assessment%20of%20Image%20Color%20Temperature%20Models%2C%20Datasets%20and%20Benchmarks.pdf) |  
-| 🌐 Project Page | [ICTA2Net.github.io](https://chasecjg.github.io/ICTA2Net.github.io/) |  
-| ⚖️ Pre-trained Weights | [Google Drive](https://drive.google.com/file/d/1xpYZbgaj90cSuS5w_yTIQifXjKmkOol_/view?usp=sharing) / [百度网盘](https://pan.baidu.com/s/18h99DgDhvC51rt9XW1x5PA?pwd=6666) |  
-| 📊 Dataset | [百度网盘](https://pan.baidu.com/s/1xxxxxx) *(待补充)* |  
+---
+
+## 📁 **Resource Links | 项目资源**
+| 🔖 Type                | 🔗 Access Link                                                                 |
+|------------------------|--------------------------------------------------------------------------------|
+| 📄 **Paper / 论文PDF** | [Download PDF](https://github.com/chasecjg/ICTA2Net/blob/main/paper/Thinking%20Aesthetics%20Assessment%20of%20Image%20Color%20Temperature%20Models%2C%20Datasets%20and%20Benchmarks.pdf) |
+| 🌐 **Project Page / 项目主页** | [ICTA2Net.github.io](https://chasecjg.github.io/ICTA2Net.github.io/)           |
+| 🧠 **Pre-trained Weights / 预训练模型权重** | [Google Drive](https://drive.google.com/file/d/1xpYZbgaj90cSuS5w_yTIQifXjKmkOol_/view?usp=sharing), [百度网盘](https://pan.baidu.com/s/18h99DgDhvC51rt9XW1x5PA?pwd=6666) |
+| 📊 **Dataset / 数据集** | [百度网盘](https://pan.baidu.com/s/1xxxxxx) _(即将更新)_                        |
+
 
 ---
 
@@ -35,7 +38,7 @@
        alt="Dataset Overview: Color Temperature Distribution & t-SNE Visualization" 
        width="80%" 
        style="border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-  <p style="font-size: 14px; color: #666; margin-top: 8px;">Figure 1: Dataset Overview. Our dataset consists of multiple sets of images with different white balance shifts, along with their corresponding high-quality aesthetic reference images. The t-SNE visualization of the images at various color temperatures in the dataset is shown in the figure. This dataset is constructed from linear raw RGB images in the MIT-Adobe FiveK and PPR10K datasets. By precisely simulating the camera ISP process, we generate multiple rendered versions of each image with varying color temperatures.</p>
+  <p style="font-size: 14px; color: #666; margin-top: 8px; text-align: justify; max-width: 90%;"><b>Figure 1.</b>: Dataset Overview. Our dataset consists of multiple sets of images with different white balance shifts, along with their corresponding high-quality aesthetic reference images. The t-SNE visualization of the images at various color temperatures in the dataset is shown in the figure. This dataset is constructed from linear raw RGB images in the MIT-Adobe FiveK and PPR10K datasets. By precisely simulating the camera ISP process, we generate multiple rendered versions of each image with varying color temperatures.</p>
 </div>
 
 <br>
@@ -46,7 +49,7 @@
        alt="ICTA2Net Architecture: Cross-Modal Fusion for Color Temperature Aesthetics" 
        width="90%" 
        style="border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-  <p style="font-size: 14px; color: #666; margin-top: 8px;">Figure 2: Overall framework of ICTA2Net, comprising four components: a Color Temperature Encoder for capturing color temperature variations; a Contextual Awareness Module (including Visual Encoder, Text Encoder, and Text Denoise Model); a Cross-Modal Fusion Module for visual-textual integration; and a Pairwise Ranking Predictor for aesthetic preference estimation.</p>
+  <p style="font-size: 14px; color: #666; margin-top: 8px; text-align: justify; max-width: 90%;"><b>Figure 2.</b>: Overall framework of ICTA2Net, comprising four components: a Color Temperature Encoder for capturing color temperature variations; a Contextual Awareness Module (including Visual Encoder, Text Encoder, and Text Denoise Model); a Cross-Modal Fusion Module for visual-textual integration; and a Pairwise Ranking Predictor for aesthetic preference estimation.</p>
 </div>
 
 <br>
@@ -57,45 +60,43 @@
        alt="Aesthetic Ranking Visualization: Color Temperature Impact on Image Aesthetics" 
        width="95%" 
        style="border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-  <p style="font-size: 14px; color: #666; margin-top: 8px;">Figure 3: Visualization of model ranking results: aesthetic scores decrease progressively from left to right and top to bottom.</p>
+  <p style="font-size: 14px; color: #666; margin-top: 8px; text-align: justify; max-width: 90%;"><b>Figure 3.</b>: Visualization of model ranking results: aesthetic scores decrease progressively from left to right and top to bottom.</p>
 </div>
 
 ---
 
 ## 🚀 Quick Start  
-
-### 1. Environment Preparation  
+### 1. Environment Preparation
 > *Recommended: Python 3.9+, PyTorch 1.12+, CUDA 11.6+*  
-
 ```bash
 # Clone repository
 git clone https://github.com/chasecjg/ICTA2Net.git
 cd ICTA2Net
-
-# Install dependencies
-pip install -r requirements.txt
 ```
 
+### 2. Dataset Setup  
 
-### 2. Dataset Setup
-1. Download the dataset from the provided link.
-2. Unzip to the specified directory (modify dataset_root in options.py).
-3. Two training splits are provided:
-  - train_42.csv: Full dataset (42k samples)
-  - train_8.csv: Optimized subset (8k samples, recommended for quick training)
+1. 📥 **Download**: Get the dataset from the provided link.  
 
-### 3. Model Training
+2. 📂 **Unzip**: Extract to the specified directory (update `dataset_root` in `options.py`).  
+3. 📊 **Training Splits**: Two splits are available:  
+    - 📜 `train_42.csv`: Full dataset (42k samples)  
+    - ⚡ `train_8.csv`: Optimized subset (8k samples, recommended for quick training)  
+
+
+### 3. Model Training  
 ```bash
 # Modify hyperparameters in options.py (e.g., resume, weight path)
 python train.py
 ```
-### 4. Inference & Evaluation
+
+### 4. Inference & Evaluation  
 ```bash
 # Adjust test parameters in options.py (e.g., test dataset path)
 python test.py
 ```
 
-### 📝 Citation
+### 📝 Citation  
 ```bibtex
 @inproceedings{cheng2026thinking,
   title     = {Thinking Aesthetics Assessment of Image Color Temperature: Models, Datasets and Benchmarks},
@@ -106,3 +107,12 @@ python test.py
   url       = {https://github.com/chasecjg/ICTA2Net/tree/main}
 }
 ```
+---
+
+<div align="left">
+
+### 📫 欢迎 star、fork 与交流合作！
+
+<p align="left"><a href="#top">🔝 Back to Top</a></p>
+
+</div>
