@@ -25,7 +25,8 @@ sys.path.append(parent_path)
 
 # import necessary modules
 from ICTA2Net.DETRIS.model import build_segmenter
-from ICTA2Net.dataset.dataset_test import AVADataset_test
+from ICTA2Net.dataset.dataset import AVADataset_test
+
 from ICTA2Net.utils.utils import AverageMeter
 from ICTA2Net.utils import option
 
@@ -57,7 +58,7 @@ def validate(opt, model, loader, mse_criterion, writer=None, global_step=None, n
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(['img1_name', 'score1', 'pred1', 'img2_name', 'score2', 'pred2', 'pred_label', 'gt_label'])
 
-    for idx, (img1, img2, text1, text2, score1, score2, labels, image_name1, image_name2, confidence) in enumerate(tqdm(loader)):
+    for idx, (img1, img2, text1, text2, score1, score2, labels, image_name1, image_name2, confidence, _) in enumerate(tqdm(loader)):
         img1, img2 = img1.to(opt.device), img2.to(opt.device)
         text1 = text1.to(opt.device)
         confidence = confidence.to(opt.device).float().view(-1,1)
@@ -130,7 +131,7 @@ def validate_iea(opt, model, loader, mse_criterion, writer=None, global_step=Non
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(['img1_name', 'score1', 'pred1', 'img2_name', 'score2', 'pred2', 'pred_label', 'gt_label'])
 
-    for idx, (img1, img2, text1, text2, score1, score2, labels, image_name1, image_name2, confidence) in enumerate(tqdm(loader)):
+    for idx, (img1, img2, text1, text2, score1, score2, labels, image_name1, image_name2, confidence, _) in enumerate(tqdm(loader)):
         img1, img2 = img1.to(opt.device), img2.to(opt.device)
         text1 = text1.to(opt.device)
         confidence = confidence.to(opt.device).float().view(-1,1)
@@ -198,15 +199,15 @@ def start_test(opt, csv_path, image_path):
     model = model.to(opt.device)
     criterion.to(opt.device)
 
-    if opt.resume:
-        checkpoint = torch.load(opt.checkpoint_path)
-        model.load_state_dict(checkpoint['model_state_dict'])
-        print("************ Model Loaded Successfully ************")
+
+    checkpoint = torch.load(opt.checkpoint_path)
+    model.load_state_dict(checkpoint['model_state_dict'])
+    print("************ Model Loaded Successfully ************")
 
     print(f"********************* Start Testing {csv_path} *********************")
     base_name = os.path.splitext(csv_path)[0]
-    csv_save_path =f"ICTA2Net/results/{base_name}_test.csv"
-    result_txt_path = f"ICTA2Net/results/{base_name}_test.txt"
+    csv_save_path =f"/home/cjg/workSpace/AVA_image_sort_v2/ICTA2Net/results/{base_name}_test.csv"
+    result_txt_path = f"/home/cjg/workSpace/AVA_image_sort_v2/ICTA2Net/results/{base_name}_test.txt"
     test_loss, tacc, srcc, plcc = validate(opt, model=model, loader=test_loader, mse_criterion=criterion, csv_save_path=csv_save_path)
     test_loss_iea, tacc_iea, srcc_iea, plcc_iea = validate_iea(opt, model=model, loader=test_loader, mse_criterion=criterion, csv_save_path=csv_save_path)
 

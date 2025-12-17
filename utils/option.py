@@ -13,6 +13,8 @@ def init():
                         help='directory to imag')
     parser.add_argument('--image_path_H', type=str,default="/mnt/group_temp/cjg/Temp/PPR10k/group_temp_imgname_tint=0",
                         help='directory to imag')
+    parser.add_argument('--path_to_save_csv', type=str,default="/home/cjg/workSpace/AVA_image_sort_v2/ICTA2Net/data/test",
+                        help='directory to imag')
     parser.add_argument('--experiment_dir_name', type=str, default='.',
                         help='directory to project')
 
@@ -29,8 +31,8 @@ def init():
                         )
     parser.add_argument('--gpu_id', type=str, default='0', help='which gpu to use')
     parser.add_argument('--model_save_path', type=str, default='/home/cjg/workSpace/AVA_image_sort_v2/ICTA2Net/weight', help='which gpu to use')
-    parser.add_argument('--resume', type=bool, default=False, help='whether resume training')
-    parser.add_argument('--checkpoint_path', type=str, default="/home/cjg/workSpace/AVA_image_sort_v2/ICTA2Net/weight/ICTA2Net-best---.pth", help='checkpoint_path')
+    parser.add_argument('--resume', type=bool, default=True, help='whether resume training')
+    parser.add_argument('--checkpoint_path', type=str, default="/home/cjg/workSpace/AVA_image_sort_v2/ICTA2Net/weight/ICTA2Net-best.pth", help='checkpoint_path')
     parser.add_argument('--ablate_text', type=bool, default=False, help='whether ablate text')
 
     # ************************************************************************model parameters************************************************************************

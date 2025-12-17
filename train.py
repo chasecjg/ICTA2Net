@@ -1,6 +1,8 @@
 import sys, os
 
 
+
+
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 sys.path.append(os.path.split(rootPath)[0])
@@ -36,7 +38,7 @@ opt = option.init()
 opt.device = torch.device("cuda:{}".format(opt.gpu_id))
 
 def create_data_part(opt):
-    train_csv_path = os.path.join(opt.train_csv_path, 'train_8.csv')
+    train_csv_path = os.path.join(opt.train_csv_path, 'demo.csv')
     
     test_csv_path = os.path.join(opt.test_csv_path, 'ICTAA-GP.csv')
     validate_csv_path = os.path.join(opt.test_csv_path, 'ICTAA-HP.csv')
