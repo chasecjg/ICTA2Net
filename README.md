@@ -116,12 +116,13 @@ python test.py
 ### 📝 Citation  
 ```bibtex
 @inproceedings{cheng2026thinking,
-  title     = {Thinking Aesthetics Assessment of Image Color Temperature: Models, Datasets and Benchmarks},
-  author    = {Cheng, Jinguang and Li, Chunxiao and He, Shuai and Chen, Taiyu and Ming, Anlong},
-  booktitle = {Proceedings of the 40th AAAI Conference on Artificial Intelligence (AAAI)},
-  year      = {2026},
-  note      = {Poster},
-  url       = {https://github.com/chasecjg/ICTA2Net/tree/main}
+  title={Thinking Aesthetics Assessment of Image Color Temperature: Models, Datasets and Benchmarks},
+  author={Cheng, Jinguang and Li, Chunxiao and He, Shuai and Chen, Taiyu and Ming, Anlong},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={40},
+  number={5},
+  pages={3246--3254},
+  year={2026}
 }
 ```
 ---
