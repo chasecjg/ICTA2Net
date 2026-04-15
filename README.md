@@ -26,7 +26,7 @@
 | 🌐 **Project Page / 项目主页** | [ICTA2Net.github.io](https://chasecjg.github.io/ICTA2Net.github.io/)           |
 | 🧠 **Pre-trained Weights / 预训练模型权重** | [Google Drive](https://drive.google.com/file/d/1xpYZbgaj90cSuS5w_yTIQifXjKmkOol_/view?usp=sharing), [百度网盘](https://pan.baidu.com/s/18h99DgDhvC51rt9XW1x5PA?pwd=6666) |
 | 📊 **Dataset / 数据集** | [百度网盘](https://pan.baidu.com/s/1lCjeCZ9_CnQlP929PrTyVQ?pwd=6666)                      |
-
+| 📊 **Demo** | [Demo](https://huggingface.co/spaces/AlphaPix/icta2net-demo)                      |
 
 ---
 
