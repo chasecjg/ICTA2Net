@@ -14,7 +14,7 @@
 
 ## 📢 **Announcement | 项目公告**
 > 🎉 **The full paper and official code have been released in this repository.**  
-> 🎉 **论文全文与官方代码已正式发布，欢迎查阅与使用！**
+> 🎉 **论文全文与官方代码已正式发布，感谢查阅与使用！**
 
 ---
 
