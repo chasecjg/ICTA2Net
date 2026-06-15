@@ -8,7 +8,6 @@
 [![GitHub License](https://img.shields.io/github/license/chasecjg/ICTA2Net?style=for-the-badge&color=4169e1)](https://github.com/chasecjg/ICTA2Net/blob/main/LICENSE)
 [![AAAI 2026](https://img.shields.io/badge/AAAI%202026-Poster-32cd32?style=for-the-badge)](https://aaai.org/Conferences/AAAI-26/)
 
-
 </div>
 
 ---
